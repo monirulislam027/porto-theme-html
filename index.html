@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: {
+                main: "#212529",
+                hover: "#32383e",
+              },
+              primary: {
+                main: "#08c",
+                hover: "#00a1f2",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style></style>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div>
+        <!-- top header -->
+        <div class="bg-gray-100 py-3">
+          <div class="container mx-auto">
+            <div class="flex justify-between">
+              <ul class="flex">
+                <li class="mr-2 text-sm text-gray-600 hover:text-black-hover">
+                  <a href="/about-us">About Us</a>
+                </li>
+                <li class="mr-2 text-sm text-gray-600 hover:text-black-hover">
+                  <a href="/contact-us">Contact Us</a>
+                </li>
+              </ul>
+              <div>
+                <ul class="flex">
+                  <li
+                    class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 text-black-main hover:text-white hover:bg-blue-400"
+                  >
+                    <a class="inline-block" href="/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 text-black-main hover:text-white hover:bg-blue-400"
+                  >
+                    <a class="inline-block" href="/"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 text-black-main hover:text-white hover:bg-blue-400"
+                  >
+                    <a class="inline-block" href="/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navbar -->
+        <div class="bg-primary-main py-3">
+          <div class="container mx-auto">
+            <div class="flex justify-between items-center flex-wrap">
+              <div class="w-1/2 md:w-auto">
+                <div class="h-14 w-28">
+                  <img src="./images/logo.png" alt="" class="object-cover" />
+                </div>
+              </div>
+              <div class="w-1/2 text-right text-white text-2xl md:hidden">
+                <span><i class="fa fa-bars"></i></span>
+              </div>
+              <div
+                class="w-full h-0 transition-all duration-500 ease-in overflow-hidden md:h-full md:w-auto"
+              >
+                <div>
+                  <ul class="md:flex">
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/about"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/services"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/portfolio"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/gallery"
+                        >Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-100 mr-3 tracking-wide text-base font-semibold hover:bg-white hover:text-black-main py-2 px-3 block transition-colors duration-300"
+                        href="/contact-us"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero start -->
+      <div>
+        <div
+          class="h-screen bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/images/slider/2.jpg')"
+        >
+          <div class="mx-auto h-full flex items-center justify-center">
+            <div class="text-center">
+              <h1
+                class="text-4xl md:text-5xl text-black-main font-black tracking-tighter mb-3"
+              >
+                INCREDIBLE DESIGNS
+              </h1>
+              <h3 class="text-black-hover text-lg">
+                Porto is a huge success in the one of largest world's
+                MarketPlace
+              </h3>
+              <a
+                class="inline-block btn-primary mt-6 text-xl py-4 px-5"
+                href="/"
+                >Get Start Now<span class="ml-4"
+                  ><i class="fa fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero end -->
+      <!-- featured start -->
+      <div class="py-5">
+        <div class="container mx-auto">
+          <div class="sm:flex flex-wrap">
+            <div class="md:w-1/2 lg:w-1/3">
+              <div class="flex py-5 items-center">
+                <div class="w-36">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="SEO Optimization"
+                  />
+                </div>
+                <div class="ml-5">
+                  <h3 class="font-bold text-black-main text-xl mb-1">
+                    SEO Optimization
+                  </h3>
+                  <p class="text-black-main text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3">
+              <div class="flex py-5 items-center">
+                <div class="w-36">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="Pro Marketing Ads"
+                  />
+                </div>
+                <div class="ml-5">
+                  <h3 class="font-bold text-black-main text-xl mb-1">
+                    Pro Marketing Ads
+                  </h3>
+                  <p class="text-black-main text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3">
+              <div class="flex py-5 items-center">
+                <div class="w-36">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="Secure Support"
+                  />
+                </div>
+                <div class="ml-5">
+                  <h3 class="font-bold text-black-main text-xl mb-1">
+                    Secure Support
+                  </h3>
+                  <p class="text-black-main text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- featured end -->
+      <!-- about start -->
+      <div class="py-28 bg-gray-100">
+        <div class="container mx-auto">
+          <div class="md:flex">
+            <div class="md:w-1/2 px-8 box-border">
+              <div class="w-full">
+                <h2 class="text-black-main text-2xl mb-3">
+                  Who <span class="font-black"> We are</span>
+                </h2>
+                <h5
+                  class="text-xl text-black-hover font-medium mb-6 w-9/12 leading-8"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit massa
+                  enim. Nullam id varius nunc.
+                </h5>
+                <p
+                  class="text-sm text-black-hover w-11/12 leading-6 font-medium"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus blandit massa enim. Nullam id varius nunc. Vivamus
+                  bibendum magna ex, et faucibus lacus venenatis eget
+                </p>
+                <a
+                  class="btn-dark py-4 px-6 inline-block mt-5 uppercase tracking-wider font-semibold text-xs"
+                  href="/"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="md:w-1/2 relative mt-24 h-96">
+              <div class="absolute about__image1">
+                <img src="/images/about/1.jpg" alt="" />
+              </div>
+              <div class="absolute about__image2">
+                <img src="/images/about/2.jpg" alt="" />
+              </div>
+              <div class="absolute about__image3">
+                <img src="/images/about/3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about end -->
+      <!-- team start -->
+      <div class="py-24">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="w-full">
+              <div class="flex flex-wrap">
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/1.jpg" alt="CEO" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          John Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          CEO
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/2.jpg" alt="Marketing" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Jessica Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Marketing
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/3.jpg" alt="Developer" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Rick Edward Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Developer
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/4.jpg" alt="Design" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Melinda Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Design
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/5.jpg" alt="Design" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Robert Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Design
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/6.jpg" alt="Marketing" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Melissa Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Marketing
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/7.jpg" alt="Developer" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Janice Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Developer
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-1/4 mb-8">
+                  <div class="w-full px-2 py-1 box-border">
+                    <div class="relative">
+                      <div class="">
+                        <img src="./images/team/8.jpg" alt="Developer" />
+                      </div>
+                      <div class="member__nameTitle absolute px-5 py-4">
+                        <h3 class="text-base font-bold text-white member__name">
+                          Jenny Doe
+                        </h3>
+                        <h5
+                          class="text-xs font-light tracking-wider text-white absolute bg-primary-main px-4 py-1 member__title"
+                        >
+                          Developer
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-sm leading-6 text-black-hover mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras ac ligula mi, non suscipitaccumsan
+                      </p>
+                      <ul class="flex">
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li
+                          class="mx-2 text-center w-7 h-7 text-sm rounded-2xl flex justify-center items-center transition-all duration-500 bg-blue-400 text-white hover:bg-primary-hover"
+                        >
+                          <a class="inline-block" href="/"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- team end -->
+      <!-- counter start -->
+      <div class="py-12 md:py-24 border-t-2 border-gray-200">
+        <div class="container mx-auto">
+          <div class="md:flex justify-around">
+            <div class="text-center mb-9">
+              <div class="text-4xl mb-3 text-black-hover">
+                <i class="far fa-user"></i>
+              </div>
+              <p class="text-5xl font-bold mb-1">400+</p>
+              <h3 class="font-medium text-black-hover">Happy Clients</h3>
+            </div>
+            <div class="text-center mb-9">
+              <div class="text-4xl mb-3 text-black-hover">
+                <i class="fas fa-ribbon"></i>
+              </div>
+              <p class="text-5xl font-bold mb-1">15</p>
+              <h3 class="font-medium text-black-hover">Yearn in Business</h3>
+            </div>
+            <div class="text-center mb-9">
+              <div class="text-4xl mb-3 text-black-hover">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <p class="text-5xl font-bold mb-1">178</p>
+              <h3 class="font-medium text-black-hover">High Score</h3>
+            </div>
+            <div class="text-center mb-9">
+              <div class="text-4xl mb-3 text-black-hover">
+                <i class="fas fa-mug-hot"></i>
+              </div>
+              <p class="text-5xl font-bold mb-1">352</p>
+              <h3 class="font-medium text-black-hover">Cup of Coffee</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- counter end -->
+      <div
+        class="bg-primary-main py-24 text-white"
+        style="
+          background-image: linear-gradient(
+              45deg,
+              rgba(23, 145, 207, 0.92),
+              rgba(23, 145, 207, 0.92)
+            ),
+            url('./images/testimonial-bg.jpg');
+        "
+      >
+        <div class="container mx-auto">
+          <div class="">
+            <div class="text-center w-11/12 md:w-8/12 mx-auto">
+              <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-5">
+                <img
+                  src="./images/team/1.jpg"
+                  alt="John Smith"
+                  class="inline-block"
+                />
+              </div>
+              <p class="text-sm tracking-wide font-normal leading-7 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                eget risus porta, tincidunt turpis at, interdum tortor.
+                Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Fusce ante tellus,
+                convallis non consectetur sed, pharetra nec ex.
+              </p>
+              <p class="font-bold">- John Smith , Okler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
